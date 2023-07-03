@@ -27,6 +27,10 @@ a {
   color: var(--white);
 }
 
+section {
+  margin: 100px 0;
+}
+
 /********
  UTILS  *
 *********/
@@ -103,11 +107,26 @@ header + * {
   min-height: 200px;
 }
 
+/* STRATEGIC PLANNING */
+#strategic-planning {
+  background-color: var(--violet);
+  color: var(--white);
+}
+
+#strategic-planning .row {
+  flex-direction: column;
+}
+
+#strategic-planning .planning-items {
+  width: 100%;
+}
+
 /************
  RESPONSIVE *
 *************/
 /* TABLET */
 @media screen and (min-width: 576px) {
+  /* INTRO */
   #intro .row .col {
     width: calc((100% / 3) - 2rem);
   }
@@ -122,6 +141,8 @@ header + * {
     flex-wrap: wrap;
     margin: 0 -1rem;
   }
+
+  /* STRATEGIC-PLANNING */
 }
 
 /* DESKTOP */
@@ -134,6 +155,19 @@ header + * {
   .header-nav-r div:first-child {
     display: none;
   }
+
+  /* STRATEGIC-PLANNING */
+  #strategic-planning .container {
+    margin: 0 3rem;
+  }
+
+  #strategic-planning .row {
+    flex-direction: row;
+  }
+
+  #strategic-planning .planning-items {
+    width: 50%;
+  }
 }
 
 /*******
@@ -145,8 +179,10 @@ header + * {
 
 .b-color {
   background-color: green;
+  min-height: 200px;
 }
 
 .b-color1 {
   background-color: blue;
+  min-height: 100px;
 }
