@@ -1,0 +1,42 @@
+/* COLORI ROOT */
+:root {
+  --blue: #0084fd;
+  --lightblue: #b5ddff;
+  --violet: #9792e4;
+  --free: #fdc15f;
+  --footer: #333333;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/**********
+ GENERICS *
+***********/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/********
+ UTILS  *
+*********/
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+/***********
+ STRUCTURE *
+************/
+
+/*******
+ DEBUG *
+********/
+
+.bordered {
+  border: 1px dashed red;
+}
