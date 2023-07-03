@@ -31,6 +31,10 @@ section {
   margin: 100px 0;
 }
 
+section:last-child {
+  margin-bottom: 0;
+}
+
 /********
  UTILS  *
 *********/
@@ -157,6 +161,18 @@ header + * {
 
 #aboutUs .aUs-items {
   width: 100%;
+}
+
+/* GET STARTED */
+#Gstarted {
+  background-color: var(--violet);
+  min-height: 200px;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--footer);
+  min-height: 200px;
 }
 
 /************
