@@ -86,10 +86,46 @@ a {
   padding: 5px 10px;
 }
 
+/* PADDING HEADER */
+header + * {
+  padding-top: 80px;
+}
+
+/* INTRO */
+#intro .row {
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro .col {
+  width: 100%;
+  margin: 1rem;
+  min-height: 200px;
+}
+
 /************
  RESPONSIVE *
 *************/
-@media screen and (min-width: 900px) {
+/* TABLET */
+@media screen and (min-width: 576px) {
+  #intro .row .col {
+    width: calc((100% / 3) - 2rem);
+  }
+
+  #intro .row .col:first-child {
+    width: calc((100% / 3 * 2) - 2rem);
+  }
+
+  #intro .row {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
   /* HEADER */
   .header-nav-r div {
     display: inline-block;
@@ -109,4 +145,8 @@ a {
 
 .b-color {
   background-color: green;
+}
+
+.b-color1 {
+  background-color: blue;
 }
