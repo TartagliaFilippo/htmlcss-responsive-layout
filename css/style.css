@@ -12,31 +12,101 @@
 /**********
  GENERICS *
 ***********/
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 /********
  UTILS  *
 *********/
-
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1rem;
+  max-width: 1140px;
+  padding: 0 2rem;
+}
+
+.none {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.relative {
+  position: relative;
 }
 
 /***********
  STRUCTURE *
 ************/
+/* HEADER */
+#header-top {
+  height: 80px;
+  width: 100%;
+  background-color: var(--blue);
+  color: var(--white);
+  line-height: 80px;
+  position: fixed;
+}
+
+#header-top .container {
+  justify-content: space-between;
+}
+
+#header-top .container nav {
+  align-items: center;
+}
+
+.header-nav-r {
+  color: var(--white);
+  gap: 20px;
+}
+
+.header-nav-r div:first-child {
+  font-size: 26px;
+}
+
+.nav-items:last-child a {
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 5px 10px;
+}
+
+/************
+ RESPONSIVE *
+*************/
+@media screen and (min-width: 900px) {
+  /* HEADER */
+  .header-nav-r div {
+    display: inline-block;
+  }
+
+  .header-nav-r div:first-child {
+    display: none;
+  }
+}
 
 /*******
  DEBUG *
 ********/
-
 .bordered {
   border: 1px dashed red;
+}
+
+.b-color {
+  background-color: green;
 }
