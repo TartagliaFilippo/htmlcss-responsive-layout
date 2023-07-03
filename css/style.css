@@ -148,6 +148,17 @@ header + * {
   min-height: 200px;
 }
 
+/* ABOUT US */
+#aboutUs .row {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#aboutUs .aUs-items {
+  width: 100%;
+}
+
 /************
  RESPONSIVE *
 *************/
@@ -178,6 +189,15 @@ header + * {
 
   #benefits .row .cards {
     width: calc((100% / 2) - 2rem);
+  }
+
+  /* ABOUT US */
+  #aboutUs .row {
+    flex-direction: row;
+  }
+
+  #aboutUs .aUs-items:last-child {
+    width: calc(100% / 3);
   }
 }
 
