@@ -131,6 +131,23 @@ header + * {
   margin-bottom: 20px;
 }
 
+/* BENEFITS */
+#benefits {
+  background-color: var(--violet);
+}
+
+#benefits .row {
+  flex-direction: column;
+  align-items: center;
+}
+
+#benefits .cards {
+  width: 100%;
+  background-color: var(--white);
+  margin: 1rem;
+  min-height: 200px;
+}
+
 /************
  RESPONSIVE *
 *************/
@@ -152,7 +169,16 @@ header + * {
     margin: 0 -1rem;
   }
 
-  /* STRATEGIC-PLANNING */
+  /* BENEFITS */
+  #benefits .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+  }
+
+  #benefits .row .cards {
+    width: calc((100% / 2) - 2rem);
+  }
 }
 
 /* DESKTOP */
@@ -177,6 +203,17 @@ header + * {
 
   #strategic-planning .planning-items {
     width: 50%;
+  }
+
+  /* BENEFITS */
+  #benefits .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+  }
+
+  #benefits .row .cards {
+    width: calc((100% / 3) - 2rem);
   }
 }
 
