@@ -119,6 +119,16 @@ header + * {
 
 #strategic-planning .planning-items {
   width: 100%;
+  margin-bottom: 20px;
+}
+
+/* TESTIMONIALS */
+#testimonials .col {
+  width: 100%;
+  min-height: 100px;
+  background-color: var(--violet);
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 /************
