@@ -277,6 +277,7 @@ header + * {
 /* BENEFITS */
 #benefits {
   background-color: var(--violet);
+  text-align: center;
 }
 
 #benefits .row {
@@ -289,6 +290,29 @@ header + * {
   background-color: var(--white);
   margin: 1rem;
   min-height: 200px;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: left;
+}
+
+#benefits .cards h2 {
+  font-size: 4rem;
+  color: var(--violet);
+}
+
+#benefits .cards h3 {
+  font-size: 2rem;
+  color: var(--violet);
+  margin: 1.5rem 0;
+}
+
+#benefits .cards .btn {
+  display: inline-block;
+  background-color: var(--violet);
+  color: var(--white);
+  padding: 10px 50px;
+  border-radius: 22px;
+  margin: 2rem 0;
 }
 
 /* ABOUT US */
