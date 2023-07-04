@@ -146,6 +146,10 @@ header + * {
   display: table;
 }
 
+#intro .pic img {
+  display: block;
+}
+
 .apple i {
   margin: 0 7px;
 }
