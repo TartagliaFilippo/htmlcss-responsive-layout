@@ -83,6 +83,7 @@ p {
   color: var(--white);
   line-height: 80px;
   position: fixed;
+  z-index: 10;
 }
 
 #header-top .container {
@@ -325,11 +326,53 @@ header + * {
 #aboutUs .row {
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
 }
 
 #aboutUs .aUs-items {
   width: 100%;
+}
+
+.aUs-items h2 {
+  font-size: 2rem;
+  color: var(--violet);
+}
+
+.aUs-items p {
+  margin: 2rem 0;
+}
+
+.aUs-items .image {
+  background-image: url(../img/about.jpg);
+  width: 250px;
+  height: 250px;
+  aspect-ratio: 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+.aUs-items .quote {
+  font-size: 5rem;
+  color: var(--violet);
+  position: absolute;
+  top: 25px;
+  left: 210px;
+}
+
+.aUs-items h3 {
+  font-size: 2rem;
+  color: var(--violet);
+}
+
+.aUs-items .btn {
+  display: inline-block;
+  background-color: var(--violet);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 22px;
+  margin: 2rem 0;
 }
 
 /* GET STARTED */
@@ -384,6 +427,7 @@ footer {
   /* ABOUT US */
   #aboutUs .row {
     flex-direction: row;
+    align-items: flex-start;
   }
 
   #aboutUs .aUs-items:last-child {
