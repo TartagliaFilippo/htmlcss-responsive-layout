@@ -403,9 +403,13 @@ footer {
 
   #intro .row {
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     margin: 0 -1rem;
+  }
+
+  #intro .exhibit h5 {
+    display: inline-block;
   }
 
   /* BENEFITS */
@@ -444,6 +448,16 @@ footer {
 
   .header-nav-r div:first-child {
     display: none;
+  }
+
+  /* INTRO */
+  .intro-cards {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .intro-cards .pic {
+    align-self: flex-end;
   }
 
   /* STRATEGIC-PLANNING */
