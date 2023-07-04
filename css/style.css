@@ -407,9 +407,23 @@ header + * {
 }
 
 /* FOOTER */
-footer {
+#footer {
+  color: var(--white);
   background-color: var(--footer);
+  text-align: center;
   min-height: 200px;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer p {
+  padding: 2rem 0;
+}
+
+#footer p a {
+  color: var(--violet);
+  text-decoration: underline;
 }
 
 /************
@@ -467,6 +481,11 @@ footer {
   #Gstarted .container {
     max-width: 750px;
     margin: 0 5rem;
+  }
+
+  /* FOOTER */
+  #footer .container {
+    max-width: 750px;
   }
 }
 
