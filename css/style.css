@@ -41,6 +41,10 @@ img {
   width: 100%;
 }
 
+p {
+  line-height: 2rem;
+}
+
 /********
  UTILS  *
 *********/
@@ -125,13 +129,13 @@ header + * {
   color: var(--intro);
 }
 
-.exhibit h4 {
+#intro .exhibit h4 {
   font-size: 1.8rem;
   color: var(--blue);
   margin: 40px auto;
 }
 
-.exhibit h5 {
+#intro .exhibit h5 {
   font-size: 1.4rem;
   color: var(--white);
   background-color: #0084fd;
@@ -222,8 +226,10 @@ header + * {
   min-height: 100px;
   background-color: var(--violet);
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 3rem;
   padding: 1rem;
+  color: var(--white);
+  font-size: 1.3rem;
 
   flex-direction: column;
   align-items: center;
@@ -235,17 +241,37 @@ header + * {
 
 #testimonials .exhibit h2 {
   color: var(--violet);
+  margin: 3rem 0;
+}
+
+#testimonials .exhibit p:last-child {
+  margin-bottom: 2rem;
 }
 
 #testimonials .card {
   width: 250px;
   height: 250px;
   aspect-ratio: 1;
-  background-image: url(../img/testimonial1.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 50%;
   margin: 2rem;
+}
+
+#testimonials .col h4 {
+  margin: 1.5rem 0;
+}
+
+#testimonials .card.st {
+  background-image: url(../img/testimonial1.jpg);
+}
+
+#testimonials .card.nd {
+  background-image: url(../img/testimonial2.jpg);
+}
+
+#testimonials .card.rd {
+  background-image: url(../img/testimonial3.jpg);
 }
 
 /* BENEFITS */
