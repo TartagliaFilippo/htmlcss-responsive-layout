@@ -379,6 +379,31 @@ header + * {
 #Gstarted {
   background-color: var(--violet);
   min-height: 200px;
+  text-align: center;
+  color: var(--white);
+
+  flex-direction: column;
+  align-items: center;
+}
+
+#Gstarted div {
+  margin: 1.5rem 0;
+}
+
+#Gstarted h1 {
+  font-size: 3rem;
+  color: var(--free);
+  margin: 2rem 0;
+}
+
+#Gstarted .btn {
+  display: inline-block;
+  font-weight: bold;
+  color: var(--violet);
+  background-color: var(--white);
+  padding: 20px 60px;
+  border-radius: 36px;
+  margin: 2.5rem 0;
 }
 
 /* FOOTER */
@@ -436,6 +461,12 @@ footer {
 
   #aboutUs .aUs-items:last-child {
     width: calc(100% / 3);
+  }
+
+  /* GET STARTED */
+  #Gstarted .container {
+    max-width: 750px;
+    margin: 0 5rem;
   }
 }
 
