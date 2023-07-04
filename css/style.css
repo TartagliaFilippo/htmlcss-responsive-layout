@@ -29,7 +29,8 @@ a {
 }
 
 section {
-  margin: 100px 0;
+  margin: 50px 0;
+  padding: 50px 0;
 }
 
 section:last-child {
@@ -176,6 +177,45 @@ header + * {
   margin-bottom: 20px;
 }
 
+#strategic-planning .planning-items:last-child {
+  background-color: var(--white);
+  color: var(--black);
+  text-align: center;
+  border-radius: 50px;
+}
+
+#strategic-planning .image {
+  margin: 6rem 0;
+}
+
+.planning-items h2 {
+  font-size: 2.5rem;
+  margin: 4rem 0;
+}
+
+.planning-items p {
+  line-height: 2rem;
+}
+
+#strategic-planning .planning-items:last-child .image {
+  margin: 0;
+}
+
+#strategic-planning .planning-items:last-child h4 {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+
+.download i {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: var(--violet);
+  font-size: 1.5rem;
+  border-radius: 50%;
+  margin: 3rem 0;
+}
+
 /* TESTIMONIALS */
 #testimonials .col {
   width: 100%;
@@ -285,6 +325,8 @@ footer {
 
   #strategic-planning .row {
     flex-direction: row;
+    align-items: flex-end;
+    gap: 50px;
   }
 
   #strategic-planning .planning-items {
