@@ -42,6 +42,7 @@ img {
 }
 
 p {
+  font-size: 20px;
   line-height: 2rem;
 }
 
@@ -116,6 +117,10 @@ header + * {
 }
 
 /* INTRO */
+#intro {
+  margin-top: 0;
+}
+
 #intro .row {
   flex-direction: column;
   align-items: center;
@@ -180,6 +185,10 @@ header + * {
 
 #strategic-planning .row {
   flex-direction: column;
+}
+
+.planning-items:last-child {
+  padding: 1rem;
 }
 
 #strategic-planning .planning-items {
@@ -300,6 +309,7 @@ header + * {
 #benefits .cards {
   width: 100%;
   background-color: var(--white);
+  color: var(--intro);
   margin: 1rem;
   min-height: 200px;
   border-radius: 20px;
@@ -456,6 +466,11 @@ header + * {
     display: inline-block;
   }
 
+  #intro .pic img {
+    width: 50%;
+    display: block;
+  }
+
   /* BENEFITS */
   #benefits .row {
     flex-direction: row;
@@ -472,10 +487,18 @@ header + * {
     flex-direction: row;
   }
 
+  #testimonials .exhibit {
+    text-align: left;
+  }
+
   /* ABOUT US */
   #aboutUs .row {
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  .aUs-items h2 {
+    font-size: 5rem;
   }
 
   #aboutUs .aUs-items:last-child {
@@ -515,6 +538,11 @@ header + * {
     align-self: flex-end;
   }
 
+  #intro .pic img {
+    width: 100%;
+    display: block;
+  }
+
   /* STRATEGIC-PLANNING */
   #strategic-planning .container {
     margin: 0 3rem;
@@ -528,6 +556,17 @@ header + * {
 
   #strategic-planning .planning-items {
     width: 50%;
+  }
+
+  .planning-items:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .planning-items:last-child .image {
+    width: 50%;
+    margin-top: 2rem;
   }
 
   /* BENEFITS */
