@@ -421,6 +421,10 @@ header + * {
   margin: 2.5rem 0;
 }
 
+#Gstarted p a {
+  text-decoration: underline;
+}
+
 /* FOOTER */
 #footer {
   color: var(--white);
@@ -544,8 +548,14 @@ header + * {
   }
 
   /* STRATEGIC-PLANNING */
+  #strategic-planning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   #strategic-planning .container {
-    margin: 0 3rem;
+    padding: 0 7rem;
   }
 
   #strategic-planning .row {
